@@ -21,13 +21,14 @@ public class HBaseAPI {
         conf = HBaseConfiguration.create();
 //        集群的连接地址(VPC内网地址)在控制台页面的数据库连接界面获得
 //        conf.set("hbase.zookeeper.quorum", "ld-bp19x2n530lt779sd-proxy-lindorm-pub.lindorm.rds.aliyuncs.com:30020");
-        conf.set("hbase.zookeeper.quorum", "ld-bp19x2n530lt779sd-proxy-lindorm.lindorm.rds.aliyuncs.com:30020");
+//        conf.set("hbase.zookeeper.quorum", "ld-bp19x2n530lt779sd-proxy-lindorm-pub.lindorm.rds.aliyuncs.com:30060");
+        conf.set("hbase.zookeeper.quorum", "ld-bp19x2n530lt779sd-proxy-lindorm-pub.lindorm.rds.aliyuncs.com:30060");
 
 //        xml_template.comment.hbaseue.username_password.default
         conf.set("hbase.client.username", "admin");
         conf.set("hbase.client.password", "admin");
 //        如果您直接依赖了阿里云hbase客户端，则无需配置connection.impl参数，如果您依赖了alihbase-connector，则需要配置此参数
-//        conf.set("hbase.client.connection.impl", AliHBaseUEClusterConnection.class.getName());
+        conf.set("hbase.client.connection.impl", AliHBaseUEClusterConnection.class.getName());
         try {
             connection = ConnectionFactory.createConnection(conf);
         } catch (IOException e) {
@@ -59,6 +60,15 @@ public class HBaseAPI {
 ////                // ...
 ////            }
 //            scanner.close();
+
+//            Scan scan = new Scan();
+//            scan.addColumn(Bytes.toBytes("state"), Bytes.toBytes("desired.color"));
+//            scan.setStartRow(Bytes.toBytes("device1_1462232313_"));
+//            scan.setStopRow(Bytes.toBytes("device1_1748271841_"));
+//            ResultScanner scanner = table.getScanner(scan);
+//            for (Result result: scanner) {
+//                System.out.println(result);
+//            }
         }
         return res;
 
