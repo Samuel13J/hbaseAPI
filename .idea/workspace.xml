@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="287eecc0-682b-4fc2-b1d8-9cc4a009b3f2" name="Changes" comment="新增阿里云lindorm查询api">
+    <list default="true" id="287eecc0-682b-4fc2-b1d8-9cc4a009b3f2" name="Changes" comment="修改阿里云lindorm查询api">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leelen/hbase/HBaseDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leelen/hbase/JavaToHbase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/leelen/hbase/MyRunnable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/leelen/hbase/HBaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/leelen/hbase/HBaseAPI.java" afterDir="false" />
@@ -16,6 +19,14 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,13 +70,42 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HBaseAPI">
     <configuration name="HBaseAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.leelen.hbase.HBaseAPI" />
+      <module name="hbaseAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.leelen.hbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaToHbase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.leelen.hbase.JavaToHbase" />
+      <module name="hbaseAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.leelen.hbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyRunnable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.leelen.hbase.MyRunnable" />
       <module name="hbaseAPI" />
       <extension name="coverage">
         <pattern>
@@ -80,6 +120,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HBaseAPI" />
+        <item itemvalue="Application.JavaToHbase" />
+        <item itemvalue="Application.MyRunnable" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +147,14 @@
       <workItem from="1684717136817" duration="1240000" />
       <workItem from="1684720295407" duration="2365000" />
       <workItem from="1684807248845" duration="11942000" />
-      <workItem from="1684890122208" duration="1237000" />
+      <workItem from="1684890122208" duration="24243000" />
+      <workItem from="1684978128302" duration="19667000" />
+      <workItem from="1685085762193" duration="3310000" />
+      <workItem from="1685090378767" duration="1566000" />
+      <workItem from="1685339014702" duration="295000" />
+      <workItem from="1685341442084" duration="226000" />
+      <workItem from="1685412819261" duration="36052000" />
+      <workItem from="1685522044639" duration="11517000" />
     </task>
     <task id="LOCAL-00001" summary="新增阿里云lindorm查询api">
       <created>1684460760068</created>
@@ -114,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684460760068</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改阿里云lindorm查询api">
+      <created>1684891917589</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684891917589</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +202,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="新增阿里云lindorm查询api" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增阿里云lindorm查询api" />
+    <MESSAGE value="修改阿里云lindorm查询api" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改阿里云lindorm查询api" />
   </component>
 </project>
